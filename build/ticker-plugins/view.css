@@ -1,0 +1,224 @@
+/*!******************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/ticker-plugins/style.scss ***!
+  \******************************************************************************************************************************************************************************************************************************************************/
+.wp-block-b-blocks-ticker-plugins {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  /* Bootstrap CSS Overrides with theme3Ticker Prefix */
+  /* Custom Styles with theme3Ticker Prefix */
+  /* Keyframes for Animations with theme3Ticker Prefix */
+}
+.wp-block-b-blocks-ticker-plugins .container {
+  overflow: hidden;
+  -webkit-mask: linear-gradient(transparent, #fff 20%, #fff 80%, transparent);
+}
+.wp-block-b-blocks-ticker-plugins .name a, .wp-block-b-blocks-ticker-plugins .buttonLink {
+  text-decoration: none;
+}
+.wp-block-b-blocks-ticker-plugins .ticker-list {
+  --direction:column;
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.wp-block-b-blocks-ticker-plugins .ticker-list-row {
+  --direction:row ;
+}
+.wp-block-b-blocks-ticker-plugins .ticker-scroller-x {
+  overflow: hidden;
+}
+.wp-block-b-blocks-ticker-plugins .ticker-scroller-x[data-direction=right] {
+  --_animation-direction:reverse ;
+}
+.wp-block-b-blocks-ticker-plugins .ticker-scroller-x__list {
+  width: -moz-max-content;
+  width: max-content;
+  flex-wrap: nowrap;
+}
+.wp-block-b-blocks-ticker-plugins .ticker-scroller-x__list > li {
+  flex-shrink: 0;
+}
+.wp-block-b-blocks-ticker-plugins .container-max {
+  margin-inline: auto;
+}
+.wp-block-b-blocks-ticker-plugins .tricker {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wp-block-b-blocks-ticker-plugins .add-ticker-btn {
+  width: 100%;
+  padding: 10px 20px;
+  font-size: 1.125rem;
+  cursor: pointer;
+  text-align: center;
+  color: white;
+  background: linear-gradient(90deg, #4c6ef5, #4c6ef5);
+  border: none;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.wp-block-b-blocks-ticker-plugins .add-ticker-btn:hover {
+  background: linear-gradient(90deg, #3a53d9, #3a53d9);
+}
+.wp-block-b-blocks-ticker-plugins .add-ticker-btn:focus {
+  outline: none;
+}
+@media (min-width: 1600px) {
+  .wp-block-b-blocks-ticker-plugins .container-max {
+    max-width: 100%;
+  }
+}
+@media (min-width: 1800px) {
+  .wp-block-b-blocks-ticker-plugins .container-max {
+    max-width: 109.5rem;
+  }
+}
+@media (min-width: 2100px) {
+  .wp-block-b-blocks-ticker-plugins .container-max {
+    max-width: 128.25rem;
+  }
+}
+@media (min-width: 2500px) {
+  .wp-block-b-blocks-ticker-plugins .container-max {
+    max-width: 153.25rem;
+  }
+}
+.wp-block-b-blocks-ticker-plugins .bg-opacity-5 {
+  --bs-bg-opacity:0.05 ;
+}
+.wp-block-b-blocks-ticker-plugins .text-opacity-70 {
+  --bs-text-opacity:0.7 ;
+}
+@keyframes scroll {
+  from {
+    transform: translate(0);
+  }
+  to {
+    transform: translate(calc(-50% - 0.5rem));
+  }
+}
+.wp-block-b-blocks-ticker-plugins .wrapper {
+  align-items: center;
+  overflow: hidden;
+}
+.wp-block-b-blocks-ticker-plugins .wrapper-container {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+.wp-block-b-blocks-ticker-plugins .content-container {
+  display: flex;
+  flex-direction: column;
+}
+.wp-block-b-blocks-ticker-plugins .img-fluid svg {
+  padding: 2px;
+}
+.wp-block-b-blocks-ticker-plugins .pulser {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: grid;
+  place-content: center;
+  overflow: hidden;
+}
+.wp-block-b-blocks-ticker-plugins .pulser__content {
+  position: relative;
+  isolation: isolate;
+  display: grid;
+  place-content: center;
+}
+.wp-block-b-blocks-ticker-plugins .pulser__content::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  animation: multiplePulse 3s linear infinite;
+  animation-delay: 1s;
+  border-radius: 50%;
+  z-index: -1;
+}
+.wp-block-b-blocks-ticker-plugins .pulser__content::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  animation: multiplePulse 3s linear infinite;
+  animation-delay: 2s;
+  border-radius: 50%;
+  z-index: -1;
+}
+.wp-block-b-blocks-ticker-plugins .bBlocksTestPurpose {
+  overflow: hidden;
+}
+@keyframes multiplePulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(2.5);
+    opacity: 0;
+  }
+}
+.wp-block-b-blocks-ticker-plugins .theme3Ticker h1 {
+  margin: 0 0 1rem;
+  font-family: var(--ff-1);
+  font-weight: 700;
+  line-height: 1.2;
+  font-size: var(--h1);
+}
+.wp-block-b-blocks-ticker-plugins .theme3Ticker.list {
+  --direction: column;
+  flex-direction: var(--direction);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.wp-block-b-blocks-ticker-plugins .theme3Ticker.list-row {
+  --direction: row;
+}
+.wp-block-b-blocks-ticker-plugins .theme3Ticker.scroller-x {
+  overflow: hidden;
+}
+.wp-block-b-blocks-ticker-plugins .theme3Ticker.theme3Ticker-scroller-x__list, .wp-block-b-blocks-ticker-plugins .theme3Ticker .theme3Ticker-scroller-x__list_second {
+  width: -moz-max-content;
+  width: max-content;
+  flex-wrap: nowrap;
+}
+.wp-block-b-blocks-ticker-plugins .theme3Ticker .tickerButtonLink {
+  display: flex;
+  text-decoration: none;
+  color: black;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.wp-block-b-blocks-ticker-plugins .theme3Ticker.scroller-x__list > li {
+  flex-shrink: 0;
+}
+.wp-block-b-blocks-ticker-plugins .theme3Ticker.section-space-top {
+  padding-block-start: clamp(3.75rem, 6.5vw + 1rem, 7.5rem);
+}
+.wp-block-b-blocks-ticker-plugins .theme3Ticker.section-space-xsm-bottom {
+  padding-block-end: clamp(1rem, 1.68vw + 1rem, 2rem);
+}
+@keyframes theme3Ticker-scroll {
+  from {
+    transform: translate(0);
+  }
+  to {
+    transform: translate(calc(-50% - 0.5rem));
+  }
+}
+
+.has-global-padding {
+  padding: 0px !important;
+}
+
+/*# sourceMappingURL=view.css.map*/

@@ -1,0 +1,64 @@
+$primaryColor: #4527a4;
+
+.bBlocksInspectorInfo {
+	padding: 6px;
+
+	a {
+		text-decoration: none;
+		font-weight: 700;
+	}
+}
+
+.wp-block-b-blocks-ticker-plugins{
+	.selectHelp{
+		color: #616063;
+	}
+	.button-container{
+		display: flex;
+		gap: 6px;
+		margin-top: 15px !important;
+		}
+		.delete-btn, .delete-btn:hover{
+			border: 1px solid red;
+			color: red;
+
+		}
+		.components-grid,.components-flex{
+			margin-top: 8px !important;
+		}
+		.components-flex{
+			margin-bottom: 8px !important;
+		}
+		.asdfghj{
+			width: 140px;
+		}
+		.asdfghjafsdfs{
+			width: 130px;
+		}
+		
+		.components-unit-control__unit-label{
+			padding: 10px!important;
+		}
+		// .has-icon {
+		// 	background-color: #4C6EF5 ;
+		// }
+		// .has-icon:hover{
+		// 	background-color: #4C6EF5 !important;
+
+		// }
+		// .dashicons{
+		// 	color: black;
+
+		// }
+		.boxLinkButton {
+			margin-top: 8px;
+		}
+		.bBlocksTestPurpose{
+			overflow: hidden;
+		}
+		
+
+
+}
+
+ 

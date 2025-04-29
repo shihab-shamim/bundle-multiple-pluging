@@ -1,0 +1,132 @@
+/*!****************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/faqs-plugins/style.scss ***!
+  \****************************************************************************************************************************************************************************************************************************************************/
+.wp-block-b-blocks-faq-blocks {
+  box-sizing: border-box;
+}
+.wp-block-b-blocks-faq-blocks * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.wp-block-b-blocks-faq-blocks .wrapper {
+  display: flex;
+}
+.wp-block-b-blocks-faq-blocks .wrapper .container {
+  display: flex;
+  margin-top: 50px;
+}
+.wp-block-b-blocks-faq-blocks .wrapper .heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.wp-block-b-blocks-faq-blocks .wrapper .custom-shadow {
+  overflow: hidden;
+}
+.wp-block-b-blocks-faq-blocks .wrapper .container {
+  width: 100%;
+}
+.wp-block-b-blocks-faq-blocks .wrapper .faq-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+}
+.wp-block-b-blocks-faq-blocks .wrapper .highlight {
+  -webkit-background-clip: text !important;
+  color: transparent !important;
+}
+.wp-block-b-blocks-faq-blocks .wrapper .faq-left .description {
+  margin-top: 20px;
+}
+.wp-block-b-blocks-faq-blocks .wrapper .contact-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-top: 20px;
+}
+.wp-block-b-blocks-faq-blocks .wrapper .contact-btn span {
+  display: flex;
+  align-items: center;
+}
+.wp-block-b-blocks-faq-blocks .wrapper .contact-btn-text {
+  margin-right: 10px;
+}
+.wp-block-b-blocks-faq-blocks .wrapper .buttonIcon {
+  margin-right: 6px;
+}
+.wp-block-b-blocks-faq-blocks .wrapper .style-3-title {
+  margin-top: 10px;
+}
+.wp-block-b-blocks-faq-blocks .wrapper .faq-item:last-child {
+  border-bottom: none;
+}
+.wp-block-b-blocks-faq-blocks .wrapper .faq-question {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 10px;
+  min-width: 200px;
+  justify-content: space-between;
+}
+.wp-block-b-blocks-faq-blocks .wrapper .faq-question .question {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  font-size: 18px;
+  font-weight: 400;
+}
+.wp-block-b-blocks-faq-blocks .wrapper .toggle-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  transition: transform 0.7s ease, color 0.7s ease;
+}
+.wp-block-b-blocks-faq-blocks .wrapper .toggle-btn .icon svg {
+  width: 20px;
+  height: 20px;
+  fill: #fff;
+}
+.wp-block-b-blocks-faq-blocks .wrapper .buttonIcon svg {
+  width: 20px;
+  height: 20px;
+}
+.wp-block-b-blocks-faq-blocks .wrapper .faq-question.active .toggle-btn {
+  transform: rotate(180deg);
+}
+.wp-block-b-blocks-faq-blocks .wrapper .faq-answer,
+.wp-block-b-blocks-faq-blocks .wrapper .faq-question {
+  max-width: 700px;
+}
+.wp-block-b-blocks-faq-blocks .wrapper .faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 10px;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+}
+.wp-block-b-blocks-faq-blocks .wrapper .faq-item.active .faq-answer {
+  max-height: auto;
+  margin: 5px 0;
+}
+@media (max-width: 768px) {
+  .wp-block-b-blocks-faq-blocks .wrapper .faq-wrapper {
+    grid-template-columns: 1fr;
+  }
+  .wp-block-b-blocks-faq-blocks .wrapper .container {
+    margin-top: 20px;
+  }
+}
+
+/*# sourceMappingURL=view.css.map*/

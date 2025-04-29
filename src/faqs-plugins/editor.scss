@@ -1,0 +1,172 @@
+$primaryColor: #4527a4;
+:root {
+  --color-delete: #e53e3e;
+  --color-copy: #3b82f6;
+  --color-text: #ffffff;
+  --color-background: #f7fafc;
+  --spacing-unit: 6px;
+  --border-radius: 4px;
+}
+
+.bBlocksInspectorInfo {
+  padding: 6px;
+
+  a {
+    text-decoration: none;
+    font-weight: 700;
+  }
+}
+
+.wp-block-b-blocks-faq-blocks {
+  .selectHelp {
+    color: #616063;
+  }
+}
+
+.border-radius,
+.bPlIconLibrary {
+  margin-top: 25px !important;
+}
+.icon-delete {
+  position: relative;
+  width: 14px;
+  height: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.delete-line {
+  position: absolute;
+  width: 14px;
+  height: 2px;
+  background-color: white;
+}
+
+.delete-line-1 {
+  transform: rotate(45deg);
+}
+
+.delete-line-2 {
+  transform: rotate(-45deg);
+}
+
+.icon-copy {
+  position: relative;
+  width: 14px;
+  height: 14px;
+}
+
+.copy-paper {
+  position: absolute;
+  width: 12px;
+  height: 14px;
+  background-color: white;
+  border-radius: 2px;
+}
+
+.copy-paper-back {
+  bottom: 0;
+  right: 0;
+}
+
+.copy-paper-front {
+  top: 0;
+  left: 0;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: calc(var(--spacing-unit) * 2);
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-unit) calc(var(--spacing-unit) * 2);
+  border-radius: var(--border-radius);
+  border: none;
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+  color: var(--color-text);
+}
+
+.btn-text {
+  margin-left: var(--spacing-unit);
+}
+
+.btn-delete {
+  background-color: var(--color-delete);
+}
+
+.btn-copy {
+  background-color: var(--color-copy);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #242424;
+  }
+
+  h1 {
+    color: #e2e8f0;
+  }
+
+  .container {
+    background-color: #1a202c;
+    border-radius: var(--border-radius);
+  }
+}
+
+@media (max-width: 480px) {
+  .button-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 150px;
+  }
+}
+.btnPrimaryContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-primary {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background-color: #4f46e5; /* Indigo tone */
+  color: #ffffff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 10px 14px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 50px;
+}
+
+.btn-icon {
+  width: 16px;
+  height: 16px;
+  fill: none;
+  stroke: #ffffff;
+  stroke-width: 2;
+}
+.interface-interface-skeleton__content {
+  transition: all 0.3s ease-in-out !important;
+}
+.edit-post-layout__content {
+  transition: all 0.3s ease-in-out !important;
+}

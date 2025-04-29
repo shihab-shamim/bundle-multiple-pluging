@@ -1,0 +1,175 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "b-blocks/blockname",
+	"version": "1.0.0",
+	"title": "Block Name",
+	"category": "bundleBplugins",
+	"description": "Short description of the block",
+	"keywords": [
+		"key1",
+		"key2",
+		"key3",
+		"key4",
+		"key5"
+	],
+	"textdomain": "b-blocks",
+	"attributes": {
+		"align": {
+			"type": "string",
+			"default": ""
+		},
+		"items": {
+			"type": "array",
+			"default": [
+				{
+					"number": 10,
+					"text": "Vertical"
+				}
+			]
+		},
+		"columns": {
+			"type": "object",
+			"default": {
+				"desktop": 3,
+				"tablet": 2,
+				"mobile": 1
+			}
+		},
+		"columnGap": {
+			"type": "string",
+			"default": "30px"
+		},
+		"rowGap": {
+			"type": "string",
+			"default": "40px"
+		},
+		"layout": {
+			"type": "string",
+			"default": "vertical"
+		},
+		"alignment": {
+			"type": "string",
+			"default": "center"
+		},
+		"textAlign": {
+			"type": "string",
+			"default": "center"
+		},
+		"width": {
+			"type": "string",
+			"default": "80%"
+		},
+		"background": {
+			"type": "object",
+			"default": {
+				"color": "#0000"
+			}
+		},
+		"content": {
+			"type": "string",
+			"default": "Content of the block",
+			"selector": ".prefixBlockName .content"
+		},
+		"typography": {
+			"type": "object",
+			"default": {
+				"fontSize": 25
+			}
+		},
+		"color": {
+			"type": "string",
+			"default": "#333"
+		},
+		"colors": {
+			"type": "object",
+			"default": {
+				"color": "#333",
+				"bg": "#fff"
+			}
+		},
+		"img": {
+			"type": "object",
+			"default": {
+				"id": null,
+				"url": "",
+				"alt": "",
+				"title": ""
+			}
+		},
+		"isIcon": {
+			"type": "boolean",
+			"default": true
+		},
+		"icon": {
+			"type": "object",
+			"default": {
+				"class": "fa-brands fa-wordpress"
+			}
+		},
+		"separator": {
+			"type": "object",
+			"default": {
+				"width": "20%",
+				"height": "2px",
+				"style": "solid",
+				"color": "#bbb"
+			}
+		},
+		"buttonTypo": {
+			"type": "object",
+			"default": {
+				"fontSize": "",
+				"lineHeight": 1.5,
+				"textDecoration": "none"
+			}
+		},
+		"padding": {
+			"type": "object",
+			"default": {
+				"top": "15px",
+				"right": "30px",
+				"bottom": "15px",
+				"left": "30px"
+			}
+		},
+		"margin": {
+			"type": "object",
+			"default": {
+				"top": "0px",
+				"right": "0px",
+				"bottom": "15px",
+				"left": "0px"
+			}
+		},
+		"border": {
+			"type": "object",
+			"default": {
+				"radius": "5px"
+			}
+		},
+		"shadow": {
+			"type": "array",
+			"default": {}
+		}
+	},
+	"supports": {
+		"align": [
+			"wide",
+			"full"
+		],
+		"html": false
+	},
+	"example": {
+		"attributes": {}
+	},
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-view.css",
+	"render": "file:./render.php",
+	"viewScript": [
+		"file:./view.js",
+		"react",
+		"react-dom"
+	]
+}

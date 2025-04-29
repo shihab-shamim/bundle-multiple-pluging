@@ -1,0 +1,112 @@
+.wp-block-b-blocks-test-purpose {
+  box-sizing: border-box;
+}
+.wp-block-b-blocks-test-purpose * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+.wp-block-b-blocks-test-purpose .wrapper .container {
+  max-width: 1350px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #000000;
+  padding: 100px 50px;
+}
+.wp-block-b-blocks-test-purpose .wrapper .faq-wrapper {
+  display: grid;
+  grid-template-columns: minmax(200px, 500px) auto;
+  gap: 120px;
+  align-items: start;
+}
+.wp-block-b-blocks-test-purpose .wrapper .faq-left .title {
+  color: rgb(252, 252, 253);
+}
+.wp-block-b-blocks-test-purpose .wrapper .highlight {
+  background: -webkit-linear-gradient(white 30%, #c7f32f 65%);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.wp-block-b-blocks-test-purpose .wrapper .faq-left .description {
+  color: rgba(252, 252, 253, 0.7);
+  margin-top: 20px;
+}
+.wp-block-b-blocks-test-purpose .wrapper .contact-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #c5fb00;
+  color: #000000;
+  padding: 8px 20px;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-top: 20px;
+}
+.wp-block-b-blocks-test-purpose .wrapper .contact-btn span {
+  display: flex;
+  align-items: center;
+}
+.wp-block-b-blocks-test-purpose .wrapper .contact-btn svg {
+  margin-left: 10px;
+}
+.wp-block-b-blocks-test-purpose .wrapper .faq-item:last-child {
+  border-bottom: none;
+}
+.wp-block-b-blocks-test-purpose .wrapper .faq-question {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 4px 10px;
+  background-color: #0D0E10;
+  border-radius: 10px;
+}
+.wp-block-b-blocks-test-purpose .wrapper .faq-question .question {
+  color: #ffffff;
+}
+.wp-block-b-blocks-test-purpose .wrapper .toggle-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+.wp-block-b-blocks-test-purpose .wrapper .toggle-btn .icon svg {
+  width: 20px;
+  height: 20px;
+}
+.wp-block-b-blocks-test-purpose .wrapper .buttonIcon svg {
+  width: 20px;
+  height: 20px;
+}
+.wp-block-b-blocks-test-purpose .wrapper .faq-item.active .toggle-btn {
+  transform: rotate(180deg);
+}
+.wp-block-b-blocks-test-purpose .wrapper .faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out, padding 0.7s ease;
+  color: #888;
+  margin: 5px 0;
+  background-color: #0D0E10;
+  border-radius: 10px;
+  padding: 0px 15px;
+}
+.wp-block-b-blocks-test-purpose .wrapper .faq-item.active .faq-answer {
+  max-height: 200px;
+}
+@media (max-width: 768px) {
+  .wp-block-b-blocks-test-purpose .wrapper .faq-wrapper {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}/*# sourceMappingURL=style.css.map */
