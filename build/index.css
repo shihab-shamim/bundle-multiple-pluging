@@ -2041,5 +2041,49 @@
   background: #4527A4;
   color: #fff;
 }
+/*!*******************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/ticker-plugins/editor.scss ***!
+  \*******************************************************************************************************************************************************************************************************************************************************/
+.bBlocksInspectorInfo {
+  padding: 6px;
+}
+.bBlocksInspectorInfo a {
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.wp-block-b-blocks-ticker-plugins .selectHelp {
+  color: #616063;
+}
+.wp-block-b-blocks-ticker-plugins .button-container {
+  display: flex;
+  gap: 6px;
+  margin-top: 15px !important;
+}
+.wp-block-b-blocks-ticker-plugins .delete-btn, .wp-block-b-blocks-ticker-plugins .delete-btn:hover {
+  border: 1px solid red;
+  color: red;
+}
+.wp-block-b-blocks-ticker-plugins .components-grid, .wp-block-b-blocks-ticker-plugins .components-flex {
+  margin-top: 8px !important;
+}
+.wp-block-b-blocks-ticker-plugins .components-flex {
+  margin-bottom: 8px !important;
+}
+.wp-block-b-blocks-ticker-plugins .asdfghj {
+  width: 140px;
+}
+.wp-block-b-blocks-ticker-plugins .asdfghjafsdfs {
+  width: 130px;
+}
+.wp-block-b-blocks-ticker-plugins .components-unit-control__unit-label {
+  padding: 10px !important;
+}
+.wp-block-b-blocks-ticker-plugins .boxLinkButton {
+  margin-top: 8px;
+}
+.wp-block-b-blocks-ticker-plugins .bBlocksTestPurpose {
+  overflow: hidden;
+}
 
 /*# sourceMappingURL=index.css.map*/
