@@ -1,5 +1,5 @@
 import "./editor.scss";
-// import "./faqs-plugins"
+import "./faqs-plugins"
 // import "./ticker-plugins"
 
 
