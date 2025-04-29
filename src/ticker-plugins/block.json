@@ -4,7 +4,7 @@
   "name": "b-blocks/ticker-plugins",
   "version": "1.0.0",
   "title": "Ticker",
-  "category": "B Block",
+  "category": "bundleBplugins",
   "description": "Dynamic ticker for urgent notifications and messages",
   "keywords": ["Ticker Text", "Ticker Plugins"],
   "textdomain": "b-blocks",
