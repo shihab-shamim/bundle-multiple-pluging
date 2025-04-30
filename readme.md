@@ -1,48 +1,55 @@
-## Plugin Setup
-1. Find an appropriate [plugin-slug](https://wordpress.org/plugins/) according to the solution of the plugin.
-2. Write the min 4-5 character prefix, plugin name, short description(up to 150 chars), long description (min 3-4 para), keywords(min 4), block name, and block description in a temporary notebook.
-2. If your block is not part of `b-blocks`, then the text domain should be your `plugin-slug`.
-4. Apply 1st and 2nd list data to this template with case sensitivity: uppercase for uppercase, lowercase for lowercase, title case for title case, and camel case for camel case. (for the block name try different way to search (blockname, blockName, BlockName, Block Name, block name))
-5. Complete the `readme.txt` file.
-6. The main element is `.wp-block-b-blocks-{blockname}`, and its immediate child is `.bBlocksBlockName`. Do not apply width or columns for the main element.
-7. Write appropriate class and ID names for the elements.
-8. Add the initial roadmap for the plugin in the `todo.txt`.
-9. If you skip one of these, we will not provide any support for the project.
-10. Enjoy CODING!
 
-The folder structure that `plugin-zip` accepts is:
+<?php
+/**
+ * Plugin Name: practice bundle
+ * Description: Short description of the plugin
+ * Version: 1.0.0
+ * Author: bPlugins
+ * Author URI: https://bplugins.com
+ * License: GPLv3
+ * License URI: https://www.gnu.org/licenses/gpl-3.0.txt
+ * Text Domain: b-blocks
+ */
 
-```
-/plugin-name
-	plugin-name.php
-	uninstall.php
-	/languages
-	/includes
-	/admin
-		/js
-		/css
-		/images
-	/public
-		/js
-		/css
-		/images
-```
+// ABS PATH
+if ( !defined( 'ABSPATH' ) ) { exit; }
 
-**If you want to add custom folders, you have to add those folder names to the {files} array in the `package.json` file.**
+// Constant
+define( 'PRACTICE_VERSION', isset( $_SERVER['HTTP_HOST'] ) && 'localhost' === $_SERVER['HTTP_HOST'] ? time() : '1.0.0' );
+define( 'PRACTICE_DIR_URL', plugin_dir_url( __FILE__ ) );
+define( 'PRACTICE_DIR_PATH', plugin_dir_path( __FILE__ ) );
 
-### Required packages for this project
-```json
-"dependencies": {
-	"immer": "latest"
-},
-"devDependencies": {
-	"@wordpress/scripts": "latest",
-	"eslint-webpack-plugin": "latest"
+if( !class_exists( 'PRACTICEPlugin' ) ){
+	class PRACTICEPlugin{
+		function __construct(){
+			add_action( 'init', [ $this, 'onInit' ] );
+			add_action( 'enqueue_block_editor_assets', [ $this, 'enqueueAssets' ] );
+			add_filter( 'block_categories_all', [$this, 'registerCategories'] );
+		}
+
+		function onInit(){
+			$blocks =['faq',"ticker"];
+			foreach ( $blocks as $block ) {
+				register_block_type( __DIR__ . "/build/".$block );
+			}
+
+		
+			
+
+		}
+		function enqueueAssets(){
+			wp_enqueue_style( 'PRACTICE-style', PRACTICE_DIR_URL . 'build/index.css', [], PRACTICE_VERSION );
+			wp_enqueue_script( 'PRACTICE-script', PRACTICE_DIR_URL . 'build/index.js', ['react', 'react-dom', 'wp-blob', 'wp-block-editor', 'wp-blocks', 'wp-components', 'wp-compose', 'wp-data', 'wp-i18n'], PRACTICE_VERSION, true );
+		}
+		function registerCategories( $categories ){
+			return array_merge( [ [
+				'slug'	=> 'practiceBundle',
+				'title'	=> __( 'Practice bundle', 'b-plugins' ),
+			] ], $categories );
+		}
+	}
+	new PRACTICEPlugin();
 }
-```
 
-## Editor Setup
-#### For this project use this setup in your IDE Editor. Preferred `Cursor`. If you want to set another setup for your personal/portfolio/example/tutorial project, use another IDE Editor. Setup the `Cursor` IDE using the provided `*.code-profile`
 
-## Not Working after installed on Taste Wp
-#### When you run 'npm run bundle' on a block plugin, the zip file may not work properly. If any issue is encountered, please build and zip it manually.
+// akhane ai code ta valo kore korte hbe tahole important kaj ses tachara temon kon kaj nai. ja ase sob choto kaj korle hbei . akhane important kaj 
